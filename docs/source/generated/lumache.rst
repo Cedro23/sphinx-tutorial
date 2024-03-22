@@ -14,6 +14,7 @@
    .. autosummary::
    
       get_random_ingredients
+      get_random_spices
    
    
 

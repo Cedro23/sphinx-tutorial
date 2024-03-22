@@ -12,7 +12,7 @@ def get_random_ingredients(kind=None):
     """Returns a list of random ingredients as strings.
 
     Args:
-        kind (list[str]|None): Optional "kind" of ingredients.
+        kind (list[str] | None): Optional "kind" of ingredients.
 
     Raises:
         lumache.InvalidKindError: If the kind is invalid.
@@ -27,12 +27,14 @@ def get_random_spices(kind=None):
     """
     Return a list of random spices as strings.
 
-    :param kind: Optional "kind" of spices.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The spices list.
-    :rtype: list[str]
+    Args:
+        kind ( list[str] | None): Optional "kind" of spices.
 
+    Raises:
+        lumache.InvalidKindError: If the kind is invalid.
+
+    Returns:
+        list[str]: The spices list.
     """
     return ["pepper", "cumin", "oregano"]
 
