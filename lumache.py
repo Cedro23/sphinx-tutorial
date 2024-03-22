@@ -1,13 +1,24 @@
+"""
+
+Lumache
+=======
+
+Utility functions for generating random ingredients and spices.
+
+"""
+
+
 def get_random_ingredients(kind=None):
-    """
-    Return a list of random ingredients as strings.
+    """Returns a list of random ingredients as strings.
 
-    :param kind: Optional "kind" of ingredients.
-    :type kind: list[str] or None
-    :raise lumache.InvalidKindError: If the kind is invalid.
-    :return: The ingredients list.
-    :rtype: list[str]
+    Args:
+        kind (list[str]|None): Optional "kind" of ingredients.
 
+    Raises:
+        lumache.InvalidKindError: If the kind is invalid.
+
+    Returns:
+        list[str]: The ingredients list.
     """
     return ["shells", "gorgonzola", "parsley"]
 
