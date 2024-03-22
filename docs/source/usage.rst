@@ -24,8 +24,15 @@ The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
 will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
-
 >>> import lumache
 >>> lumache.get_random_ingredients()
 ['shells', 'gorgonzola', 'parsley']
+   
+
+.. autofunction:: lumache.get_random_spices
+
+>>> import lumache
+>>> lumache.get_random_spices()
+return ["pepper", "cumin", "oregano"]
+
+.. autoexception:: lumache.InvalidKindError
